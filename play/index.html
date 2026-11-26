@@ -1,0 +1,7 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>html,body{margin:0;background:#101317}</style></head><body><script>
+(function(){var L=["ko", "ja"],s=null;try{s=localStorage.getItem('sim-lang')}catch(e){}
+if(L.indexOf(s)<0){s=null;var n=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''];
+for(var i=0;i<n.length&&!s;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(L.indexOf(c)>=0)s=c}
+if(!s)s=L.indexOf('en')>=0?'en':'ja'}
+location.replace(s+'.html'+location.search)})();
+</script></body></html>
